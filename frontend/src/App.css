@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+body {
+  background-color: #003E7E;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.voter-card-animate {
+  animation: fadeSlideIn 0.3s ease-out;
+}
+
+.search-glow:focus-within {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15);
+}
+
+.nav-btn-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.upload-zone {
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.upload-zone:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.05);
+}
